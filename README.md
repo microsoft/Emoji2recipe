@@ -10,12 +10,12 @@ The prerequisites to run this example are as follows:
 
 1. Visual Studio Code Tools for AI is integrated with Azure Machine Learning. Make sure that you have properly installed [Azure Machine Learning Workbench] by following the [Install and create Quickstart](https://docs.microsoft.com/en-us/azure/machine-learning/preview/quickstart-installation)
 
-2. This example could be run on any compute context. If you are running it in a remot environment it is recommended to have access to an Azure Blob Storage Account to store intermediary files. See how to create and manage your storage account [here](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)
+2. This example could be run on any compute context. If you are running it in a remote environment it is recommended to have access to an Azure Blob Storage Account to store intermediary files. See how to create and manage your storage account [here](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)
 
 ## Create a new project
 
 1. Clone this repo to your local machine to /Emoji2recipe
-2. Open the project using VS Code. You should have access to the VS Code tools for AI if you have succesfully installed Azure Machine Learning Workbench.(See instructions above)
+2. Open the project with Visual Studio Code. You should have access to the VS Code tools for AI if you have succesfully installed Azure Machine Learning Workbench.(See instructions above)
 
 ## Setup compute environment (Optional)
 
@@ -68,7 +68,7 @@ The result generated in the previous step will show you a recipe with the title 
 
 The dataset used for the experiments is available at (https://eightportions.com/datasets/Recipes/). Special thanks to Ryan Lee for curating this and making this available.
 
-Specail thanks to Ben Eisner, Tim Rocktaschel and the team from UCL that made the pre-trained emoji embeddings available.
+Specail thanks to Ben Eisner, Tim Rocktaschel and the team from UCL for making the pre-trained emoji embeddings available.
 
 # Contributing
 
