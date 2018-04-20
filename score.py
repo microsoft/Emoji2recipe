@@ -6,6 +6,9 @@ import os
 import pickle
 
 def init():
+    """
+        Load pre-processed recipes and pre-trained embedding models
+    """
     # load pre-processed recipe data
     global recipes
     with open(cfg.DATA.DATA_PATH, 'r', encoding='utf-8', errors='ignore') as fp: 

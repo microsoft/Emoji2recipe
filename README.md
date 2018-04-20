@@ -47,7 +47,7 @@ az ml experiment -c prepare my_dsvm
 ```
 
 ## Download data and embeddings
-Download the word2vec embeddings from (https://code.google.com/archive/p/word2vec/) and emoji2vec embeddings from (https://github.com/uclmr/emoji2vec) and update respective paths in config.py.
+Download the [word2vec](https://code.google.com/archive/p/word2vec/) embeddings and [emoji2vec](https://github.com/uclmr/emoji2vec) embeddings and update respective paths in config.py.
 
 ## Preprocess data and build your own model
 
@@ -55,7 +55,7 @@ Download the word2vec embeddings from (https://code.google.com/archive/p/word2ve
 az ml experiment submit -c local Emoji2recipe/preprocess.py
 ```
 
-## Predict recipes from emojis
+## Predict recipes
 
 ```
 az ml experiment submit -c local Emoji2recipe/score.py
@@ -64,11 +64,11 @@ az ml experiment submit -c local Emoji2recipe/score.py
 
 The result generated in the previous step will show you a recipe with the title and instructions!
 
-## Credits
+# Credits
 
-The dataset used for the experiments is available at (https://eightportions.com/datasets/Recipes/). Special thanks to Ryan Lee for curating this and making this available.
+The dataset used for the experiments is available [here](https://eightportions.com/datasets/Recipes/). Special thanks to Ryan Lee for curating this and making this available.
 
-Specail thanks to Ben Eisner, Tim Rocktaschel and the team from UCL for making the pre-trained emoji embeddings available.
+Special thanks to Ben Eisner, Tim Rocktaschel and the team from UCL for making the pre-trained emoji embeddings available.
 
 # Contributing
 

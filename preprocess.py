@@ -11,6 +11,9 @@ import nltk.tokenize as tk
 tokenizer = tk.TweetTokenizer(preserve_case=False, reduce_len=True, strip_handles=True)
 
 def create_recipe_vectors(p2v_our_emoji):	
+	"""
+		Create recipe vectors by averaging embeddings of inredients and saving the result
+	"""
 	recipes = load_recipes()
 	recipes_clean = {}
 
