@@ -2,7 +2,7 @@
 
 # Deep Learning for emojis with VS Code Tools for AI
 
-Semantic representations for emoji understanding used to build a recipe prediction model see: [blog](https://blogs.technet.microsoft.com/machinelearning/2017/12/06/music-generation-with-azure-machine-learning/)
+Semantic representations for emoji understanding used to build a recipe prediction model see: [blog](https://blogs.technet.microsoft.com/machinelearning/2018/04/24/deep-learning-for-emojis-with-vs-code-tools-for-ai/)
 
 ## Prerequisites
 
