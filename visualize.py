@@ -37,6 +37,5 @@ def tsne_plot(model):
                     fontname='Segoe UI Emoji',
                     fontsize=40)
     plt.savefig('t-sne.png')
-    
 
 tsne_plot(model)
