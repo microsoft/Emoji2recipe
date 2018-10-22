@@ -15,7 +15,7 @@ The prerequisites to run this example are as follows:
 ## Create a new project
 
 1. Clone this repo to your local machine to /Emoji2recipe
-2. Open the project with Visual Studio Code. You should have access to the VS Code tools for AI if you have succesfully installed Azure Machine Learning Workbench.(See instructions above)
+2. Open the project with Visual Studio Code. You should have access to the VS Code tools for AI if you have successfully installed Azure Machine Learning Workbench.(See instructions above)
 
 ## Setup compute environment (Optional)
 
