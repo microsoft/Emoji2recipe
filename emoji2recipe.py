@@ -8,19 +8,19 @@ import nltk.tokenize as tk
 
 tokenizer = tk.TweetTokenizer(preserve_case=False, reduce_len=True, strip_handles=True)
 
+
 def find_recipe(input_text, recipes, p2v_our_emoji):
-	"""
-		Does an exhaustive search through all rrecipes to find closest vector
-	"""
-	print(input_text)
-	tokens = tokenizer.tokenize(input_text)	
-	print(tokens)
-	vector = np.sum([p2v_our_emoji[t] for t in tokens], axis=0) / len(tokens)
-	
-	key, value = min(recipes.items(), key=lambda kv: (distance.euclidean(vector, np.array(kv[1]['recipe vector']))))
+    """Does an exhaustive search through all recipes to find closest vector
+    """
+    print(input_text)
+    tokens = tokenizer.tokenize(input_text)
+    print(tokens)
+    vector = np.sum([p2v_our_emoji[t] for t in tokens], axis=0) / len(tokens)
 
-	result = {}
-	result['title'] = value['title']
-	result['instructions'] = value['instructions']
+    key, value = min(recipes.items(), key=lambda kv: (distance.euclidean(vector, np.array(kv[1]['recipe vector']))))
 
-	return json.dumps(result)
+    result = {}
+    result['title'] = value['title']
+    result['instructions'] = value['instructions']
+
+    return json.dumps(result)
