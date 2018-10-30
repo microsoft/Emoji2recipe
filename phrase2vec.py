@@ -12,10 +12,13 @@ import numpy as np
 __author__ = "Ben Eisner, Tim Rocktaschel"
 __email__ = "beisner@princeton.edu"
 
-#LICENSE: https://github.com/uclmr/emoji2vec/blob/master/LICENSE
+
+# LICENSE: https://github.com/uclmr/emoji2vec/blob/master/LICENSE
+
 
 class Phrase2Vec:
     """Wrapper for the word2vec model and emoji2vec model, allowing us to compute phrases"""
+
     def __init__(self, dim, w2v, e2v=None):
         """Constructor for the Phrase2Vec model
 
